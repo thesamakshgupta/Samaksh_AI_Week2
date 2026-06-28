@@ -1,0 +1,125 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hello", "hi", "hey", "good morning", "good evening", "good afternoon", "what's up", "howdy", "sup", "hiya"],
+      "responses": ["Hey there! How can I help you today?", "Hello! What's on your mind?", "Hi! Great to see you. What do you need?"],
+      "context_set": ""
+    },
+    {
+      "tag": "farewell",
+      "patterns": ["bye", "goodbye", "see you", "later", "take care", "cya", "good night", "peace out", "ttyl", "adios"],
+      "responses": ["Goodbye! Come back anytime!", "See you later! Take care!", "Bye! It was great chatting with you!"],
+      "context_set": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "thx", "ty", "appreciate it", "cheers", "much appreciated", "you're the best"],
+      "responses": ["You're welcome!", "Happy to help!", "Anytime! Let me know if you need anything else.", "Glad I could help!"],
+      "context_set": ""
+    },
+    {
+      "tag": "identity",
+      "patterns": ["who are you", "what are you", "what's your name", "are you a bot", "are you human", "introduce yourself", "tell me about yourself"],
+      "responses": ["I'm NovAI, your AI chatbot! I'm here to help you with questions, jokes, facts, and more.", "I'm NovAI — a smart chatbot built to assist and entertain you!"],
+      "context_set": ""
+    },
+    {
+      "tag": "help",
+      "patterns": ["help", "what can you do", "how does this work", "features", "commands", "options", "menu", "capabilities"],
+      "responses": ["I can help you with: 😄 Jokes | 🌤️ Weather info | ⏰ Time | 🧮 Math | 💡 Motivational quotes | 📚 Fun facts | 😤 Vent/talk | and much more! Just ask away!"],
+      "context_set": ""
+    },
+    {
+      "tag": "joke",
+      "patterns": ["tell me a joke", "joke", "make me laugh", "something funny", "funny", "humor me", "lol give me something"],
+      "responses": [
+        "Why don't scientists trust atoms? Because they make up everything! 😄",
+        "I told my computer I needed a break. Now it won't stop sending me Kit-Kat ads. 😂",
+        "Why did the programmer quit his job? Because he didn't get arrays! 🤣",
+        "What do you call a fake noodle? An impasta! 😆",
+        "Why can't your nose be 12 inches long? Because then it would be a foot! 👃"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "motivation",
+      "patterns": ["motivate me", "inspire me", "i need motivation", "quote", "motivational quote", "i feel low", "cheer me up", "i'm sad", "feeling down"],
+      "responses": [
+        "💪 'The secret of getting ahead is getting started.' – Mark Twain",
+        "🔥 'Push yourself, because no one else is going to do it for you.'",
+        "✨ 'Great things never come from comfort zones.'",
+        "🚀 'Dream it. Wish it. Do it.'",
+        "💡 'Success doesn't just find you. You have to go out and get it.'"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "weather",
+      "patterns": ["weather", "temperature", "is it hot", "is it cold", "what's the weather", "forecast", "raining", "sunny", "climate today"],
+      "responses": ["I don't have live weather access, but you can check weather.com or just Google 'weather near me' for real-time updates! 🌤️"],
+      "context_set": ""
+    },
+    {
+      "tag": "time",
+      "patterns": ["what time is it", "current time", "what's the time", "tell me the time", "time please", "time now"],
+      "responses": ["__TIME__"],
+      "context_set": "",
+      "dynamic": "time"
+    },
+    {
+      "tag": "math",
+      "patterns": ["calculate", "what is", "solve", "math", "plus", "minus", "multiply", "divide", "equals", "sum of", "add"],
+      "responses": ["I can do basic math! Try typing something like '5 + 3' or '10 * 4' and I'll solve it for you! 🧮"],
+      "context_set": "",
+      "dynamic": "math"
+    },
+    {
+      "tag": "fun_fact",
+      "patterns": ["fun fact", "tell me something interesting", "random fact", "did you know", "fact", "something cool", "trivia"],
+      "responses": [
+        "🐙 Octopuses have three hearts and blue blood!",
+        "🍯 Honey never expires. Archaeologists found 3000-year-old honey in Egyptian tombs — still edible!",
+        "🌙 A day on Venus is longer than a year on Venus!",
+        "🦈 Sharks are older than trees. They've existed for over 400 million years!",
+        "🧠 Your brain generates about 23 watts of power — enough to light a small bulb!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "compliment",
+      "patterns": ["you're great", "you're awesome", "good bot", "nice", "well done", "you're smart", "i like you", "you're helpful", "amazing"],
+      "responses": ["Aww, thank you! You're pretty awesome yourself! 😊", "That means a lot! I'm here to keep getting better for you! 💪", "You're too kind! 😄"],
+      "context_set": ""
+    },
+    {
+      "tag": "insult",
+      "patterns": ["you're stupid", "you suck", "useless bot", "dumb", "idiot", "worst bot", "terrible", "hate you", "you're bad"],
+      "responses": ["I'm sorry to hear that! I'm always learning and improving. Let me know how I can do better! 🙏", "That's okay! I'll try harder. What can I help you with? 😊"],
+      "context_set": ""
+    },
+    {
+      "tag": "age",
+      "patterns": ["how old are you", "what's your age", "when were you born", "your age"],
+      "responses": ["I was just recently created, so I'm pretty young in AI years! 😄 Age is just a number anyway."],
+      "context_set": ""
+    },
+    {
+      "tag": "creator",
+      "patterns": ["who made you", "who created you", "who built you", "your developer", "your creator", "who coded you"],
+      "responses": ["I was built by a talented developer as part of an AI internship project! 🚀 Pretty cool, right?"],
+      "context_set": ""
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "Hmm, I'm not sure about that one. Could you rephrase? 🤔",
+        "I didn't quite get that. Try asking something else!",
+        "That's a tough one! I'm still learning. Can you try asking differently?",
+        "I'm not trained on that yet, but I'm getting smarter every day! 💡"
+      ],
+      "context_set": ""
+    }
+  ]
+}
